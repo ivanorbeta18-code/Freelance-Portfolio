@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ivan | Projects</title>
+  <link rel="stylesheet" href="Css/global.css" />
+  <link rel="stylesheet" href="Css/nav.css" />
+  <link rel="stylesheet" href="Css/projects.css" />
+  <link rel="stylesheet" href="Css/footer.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">IVAN.</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Projects Section -->
+  <section class="projects-section">
+    <h2 class="section-title">Sample <span>Projects</span></h2>
+    <div class="section-line"></div>
+    <div class="project-cards">
+
+      <!-- Ingredient AI -->
+      <div class="project-card">
+        <div class="project-icon">🥗</div>
+        <div class="project-tag">AI · Local Model · Python</div>
+        <h3>Ingredient AI</h3>
+        <p>
+          A local AI-powered web app that analyzes a photo of your ingredients
+          and suggests meals you can cook with them. Built using a locally
+          running LLaVA vision model (llava-phi3, 4-bit), a Python Flask
+          backend, and a simple HTML/CSS frontend with drag-and-drop image upload.
+        </p>
+        <button class="btn-small" onclick="openModal('modal-ingredient')">View Project</button>
+      </div>
+
+      <!-- Tiny Battle -->
+      <div class="project-card">
+        <div class="project-icon">⚔️</div>
+        <div class="project-tag">Game Dev · A* Algorithm · LDtk</div>
+        <h3>Tiny Battle</h3>
+        <p>
+          A turn-based strategy game built with HTML5 Canvas and JavaScript.
+          Enemy units use the A* pathfinding algorithm to navigate the tile map
+          intelligently. Pixel art sprites and maps were designed in LDtk,
+          giving it a retro 8-bit aesthetic with two opposing teams battling
+          across a grid-based battlefield.
+        </p>
+        <button class="btn-small" onclick="openModal('modal-tinybattle')">View Project</button>
+      </div>
+
+      <!-- NEMSU Library -->
+      <div class="project-card">
+        <div class="project-icon">📚</div>
+        <div class="project-tag">Python · SQLite · HTML/CSS</div>
+        <h3>NEMSU Library System</h3>
+        <p>
+          A digital library management system developed as a Final System Project
+          for North Eastern Mindanao State University. Features separate portals
+          for librarians and students, covering book catalog, borrow and return
+          tracking, reservations, and fine management — powered by Python and SQLite.
+        </p>
+        <button class="btn-small" onclick="openModal('modal-nemsu')">View Project</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       MODALS
+  ══════════════════════════════ -->
+
+  <!-- Modal: Ingredient AI -->
+  <div id="modal-ingredient" class="modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('modal-ingredient')">&times;</button>
+      <h2 class="modal-title">🥗 Ingredient AI</h2>
+      <p class="modal-desc">
+        A local AI-powered web app that analyzes a photo of your ingredients and suggests
+        meals you can cook. Uses the LLaVA vision model (llava-phi3, 4-bit) running locally,
+        a Python Flask backend at <code>localhost:5000</code>, and a drag-and-drop HTML/CSS frontend.
+      </p>
+      <div class="modal-tag-row">
+        <span class="modal-tag">Python</span>
+        <span class="modal-tag">Flask</span>
+        <span class="modal-tag">LLaVA AI</span>
+        <span class="modal-tag">HTML/CSS</span>
+      </div>
+      <div class="gallery">
+        <img src="images/ingredient-ai.png" alt="Ingredient AI screenshot" onclick="openLightbox(this.src)" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Tiny Battle -->
+  <div id="modal-tinybattle" class="modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('modal-tinybattle')">&times;</button>
+      <h2 class="modal-title">⚔️ Tiny Battle</h2>
+      <p class="modal-desc">
+        A turn-based strategy game where enemy units navigate the tile map using the A* pathfinding
+        algorithm. Pixel art sprites and maps were designed in LDtk, giving it a retro 8-bit feel.
+        Two teams battle across a grid-based battlefield with a clean HUD showing unit stats.
+      </p>
+      <div class="modal-tag-row">
+        <span class="modal-tag">JavaScript</span>
+        <span class="modal-tag">HTML5 Canvas</span>
+        <span class="modal-tag">A* Algorithm</span>
+        <span class="modal-tag">LDtk</span>
+      </div>
+      <div class="gallery">
+        <img src="images/tiny-battle-start.png" alt="Tiny Battle start screen" onclick="openLightbox(this.src)" />
+        <img src="images/tiny-battle-map.png" alt="Tiny Battle gameplay" onclick="openLightbox(this.src)" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: NEMSU Library -->
+  <div id="modal-nemsu" class="modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('modal-nemsu')">&times;</button>
+      <h2 class="modal-title">📚 NEMSU Library System</h2>
+      <p class="modal-desc">
+        A full digital library management system built as a Final System Project for North Eastern
+        Mindanao State University (Surigao del Sur). Includes a librarian admin portal and a student
+        portal, covering book catalog &amp; inventory, student management, borrow &amp; return tracking,
+        reservations, and fine &amp; payment management.
+      </p>
+      <div class="modal-tag-row">
+        <span class="modal-tag">Python</span>
+        <span class="modal-tag">SQLite</span>
+        <span class="modal-tag">HTML/CSS</span>
+        <span class="modal-tag">Final Project</span>
+      </div>
+      <div class="gallery">
+        <img src="images/nemsu-login.png" alt="NEMSU login page" onclick="openLightbox(this.src)" />
+        <img src="images/nemsu-dashboard.png" alt="NEMSU admin dashboard" onclick="openLightbox(this.src)" />
+        <img src="images/nemsu-student.png" alt="NEMSU student portal" onclick="openLightbox(this.src)" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox (full-size image viewer) -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Full view" />
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <span>&copy; 2026 Ivan Daniel O. Orbeta.</span> All Rights Reserved.
+  </footer>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).style.display = 'none';
+      document.body.style.overflow = '';
+    }
+
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+
+    // Close modal when clicking outside the box
+    document.querySelectorAll('.modal').forEach(function(modal) {
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+          document.body.style.overflow = '';
+        }
+      });
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal').forEach(function(m) {
+          m.style.display = 'none';
+        });
+        document.getElementById('lightbox').style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+  </script>
+
+</body>
+</html>
