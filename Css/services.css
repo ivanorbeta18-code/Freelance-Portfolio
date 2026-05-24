@@ -1,0 +1,67 @@
+/* ── services.css ── */
+
+.services-section {
+  background: var(--skyblue);
+  padding: 70px 40px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.9rem;
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.section-line {
+  width: 60px;
+  height: 4px;
+  background: var(--yellow);
+  margin: 0 auto 40px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: var(--white);
+  border-top: 5px solid var(--yellow);
+  border-radius: 6px;
+  padding: 28px 24px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card .icon {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  color: var(--blue);
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+.card p {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+@media (max-width: 620px) {
+  .services-section {
+    padding: 50px 20px;
+  }
+  .card {
+    width: 100%;
+  }
+}

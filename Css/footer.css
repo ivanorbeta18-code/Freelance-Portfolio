@@ -1,0 +1,13 @@
+/* ── footer.css ── */
+
+footer {
+  background: var(--black);
+  color: #aaa;
+  text-align: center;
+  padding: 22px 20px;
+  font-size: 0.88rem;
+}
+
+footer span {
+  color: var(--yellow);
+}

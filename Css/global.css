@@ -1,0 +1,26 @@
+/* ── global.css ── shared by every page ── */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue:    #1a3a6b;
+  --skyblue: #5aafe0;
+  --yellow:  #f5c500;
+  --black:   #111111;
+  --white:   #ffffff;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #111;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
