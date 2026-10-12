@@ -3,48 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f6f7fb" />
   <title>Ivan Daniel Orbeta | Skills</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="Css/global.css" />
   <link rel="stylesheet" href="Css/nav.css" />
   <link rel="stylesheet" href="Css/skills.css" />
   <link rel="stylesheet" href="Css/footer.css" />
 </head>
-<body>
+<body id="top">
 
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">IVAN.</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="skills.html" class="active">Skills</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Skills Section -->
-  <section class="skills-section">
-    <h2 class="section-title">My <span>Skills</span></h2>
-    <div class="section-line"></div>
-    <div class="skills-grid">
-      <span class="skill-badge">HTML</span>
-      <span class="skill-badge">CSS</span>
-      <span class="skill-badge">Basic JavaScript</span>
-      <span class="skill-badge">Premier Pro</span>
-      <span class="skill-badge">Canva</span>
-      <span class="skill-badge">Google Workspace</span>
-      <span class="skill-badge">Microsoft Office</span>
-      <span class="skill-badge">Email Management</span>
-      <span class="skill-badge">Data Entry</span>
+  <header class="site-nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="index.html" aria-label="Ivan, home">Ivan</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><span></span></button>
+      <nav aria-label="Main">
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="skills.html" class="active" aria-current="page">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li class="nav-cta"><a href="contact.html">Contact</a></li>
+      </ul>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <!-- Footer -->
-  <footer>
-    <span>&copy; 2026 Ivan Daniel O. Orbeta.</span> All Rights Reserved.
+  <main>
+    <div class="wrap section">
+      <div class="page-head">
+        <h1 class="page-title">Skills</h1>
+        <p class="page-lede">The tools I use to get the work done.</p>
+      </div>
+      <div class="skill-groups">
+        <section class="skill-group">
+          <div><h2>Web development</h2><p>Building and styling pages.</p></div>
+          <ul class="chips">
+            <li class="chip">HTML</li>
+            <li class="chip">CSS</li>
+            <li class="chip">Basic JavaScript</li>
+          </ul>
+        </section>
+        <section class="skill-group">
+          <div><h2>Creative</h2><p>Video and graphics.</p></div>
+          <ul class="chips">
+            <li class="chip">Premiere Pro</li>
+            <li class="chip">Canva</li>
+          </ul>
+        </section>
+        <section class="skill-group">
+          <div><h2>Office and admin</h2><p>Keeping work organized.</p></div>
+          <ul class="chips">
+            <li class="chip">Google Workspace</li>
+            <li class="chip">Microsoft Office</li>
+            <li class="chip">Email management</li>
+            <li class="chip">Data entry</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>&copy; 2026 Ivan Daniel O. Orbeta. All rights reserved.</span>
+      <a href="#top">Back to top</a>
+    </div>
   </footer>
 
+  <script src="js/nav.js"></script>
 </body>
 </html>

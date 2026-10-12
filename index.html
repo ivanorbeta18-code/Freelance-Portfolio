@@ -3,42 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f6f7fb" />
   <title>Ivan Daniel Orbeta | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="Css/global.css" />
   <link rel="stylesheet" href="Css/nav.css" />
   <link rel="stylesheet" href="Css/index.css" />
   <link rel="stylesheet" href="Css/footer.css" />
 </head>
-<body>
+<body id="top">
 
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">IVAN.</div>
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <header class="site-nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="index.html" aria-label="Ivan, home">Ivan</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><span></span></button>
+      <nav aria-label="Main">
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li class="nav-cta"><a href="contact.html">Contact</a></li>
+      </ul>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Hi, I'm <span>Ivan Daniel O. Orbeta</span></h1>
-    <h2>Freelance Web Developer &amp; Virtual Assistant</h2>
-    <p>
-      I help small businesses and individuals build clean, professional websites
-      and manage their digital tasks — so they can focus on what matters most.
-    </p>
-    <a class="btn" href="contact.html">Hire Me</a>
-  </section>
+  <main>
+    <section class="wrap hero">
+      <p class="status"><i></i>Open for freelance work</p>
+      <p class="hero-name">Ivan Daniel O. Orbeta</p>
+      <p class="hero-role">Freelance web developer &amp; virtual assistant</p>
+      <h1>
+        I help small businesses with
+        <span class="rotator" id="rotator" aria-hidden="true"><span class="rotator-word">web design.</span></span>
+        <span class="sr-only">web design, video editing, Canva graphics, data entry, and virtual assistance.</span>
+      </h1>
+      <p class="hero-lede">Clean, professional websites and day-to-day digital support, so you can focus on running your business.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="contact.html">Hire me</a>
+        <a class="btn btn-ghost" href="projects.html">See my projects</a>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <span>&copy; 2026 Ivan Daniel O. Orbeta.</span> All Rights Reserved.
+    <nav class="wrap quick" aria-label="Quick links">
+      <a href="services.html"><h2>Services</h2><p>What I can do for you.</p></a>
+      <a href="projects.html"><h2>Projects</h2><p>Three builds you can open and explore.</p></a>
+      <a href="about.html"><h2>About</h2><p>Who you will be working with.</p></a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>&copy; 2026 Ivan Daniel O. Orbeta. All rights reserved.</span>
+      <a href="#top">Back to top</a>
+    </div>
   </footer>
 
+  <script src="js/nav.js"></script>
+  <script src="js/home.js"></script>
 </body>
 </html>

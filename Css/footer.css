@@ -1,13 +1,5 @@
 /* ── footer.css ── */
-
-footer {
-  background: var(--black);
-  color: #aaa;
-  text-align: center;
-  padding: 22px 20px;
-  font-size: 0.88rem;
-}
-
-footer span {
-  color: var(--yellow);
-}
+.site-footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.92rem}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.site-footer a{display:inline-flex;align-items:center;min-height:44px;font-weight:600;color:var(--ink)}
+.site-footer a:hover{text-decoration:underline}

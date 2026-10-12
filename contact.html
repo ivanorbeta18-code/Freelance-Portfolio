@@ -3,71 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f6f7fb" />
   <title>Ivan Daniel Orbeta | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="Css/global.css" />
   <link rel="stylesheet" href="Css/nav.css" />
   <link rel="stylesheet" href="Css/contact.css" />
   <link rel="stylesheet" href="Css/footer.css" />
 </head>
-<body>
+<body id="top">
 
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">IVAN.</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Contact Section -->
-  <section class="contact-section">
-    <h2 class="section-title">Contact Me</h2>
-    <div class="section-line"></div>
-    <div class="contact-info">
-
-      <div class="contact-item">
-        <div class="label">Email</div>
-        <div class="value">
-          <a href=https://mail.google.com/mail/?view=cm&to=ivanorbeta18%40gmail.com">ivanorbeta18@gmail.com</a>
-        </div>
-      </div>
-
-      <div class="contact-item">
-        <div class="label">Phone</div>
-        <div class="value">+63 948 875 4971</div>
-      </div>
-
-      <div class="contact-item">
-        <div class="label">Location</div>
-        <div class="value">Marihatag, Philippines</div>
-      </div>
-
-      <div class="contact-item">
-        <div class="label">LinkedIn</div>
-        <div class="value">
-          <a href="https://www.linkedin.com/in/ivan-daniel-orbeta/" target="_blank">Ivan Daniel Orbeta</a>
-        </div>
-      </div>
-
-      <div class="contact-item">
-        <div class="label">GitHub</div>
-        <div class="value">
-          <a href="https://github.com/ivanorbeta18-code" target="_blank">ivanorbeta18 code</a>
-        </div>
-      </div>
-
+  <header class="site-nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="index.html" aria-label="Ivan, home">Ivan</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><span></span></button>
+      <nav aria-label="Main">
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li class="nav-cta"><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+      </ul>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <!-- Footer -->
-  <footer>
-    <span>&copy; 2026 Ivan Daniel O. Orbeta.</span> All Rights Reserved.
+  <main>
+    <div class="wrap section">
+      <div class="page-head">
+        <h1 class="page-title">Let's work together</h1>
+        <p class="page-lede">Send me a message about your project, or find me on LinkedIn and GitHub.</p>
+      </div>
+      <ul class="contact-list">
+        <li><a class="contact-row" href="mailto:ivanorbeta18@gmail.com"><span class="label">Email</span><span class="value">ivanorbeta18@gmail.com</span></a></li>
+        <li><a class="contact-row" href="tel:+639488754971"><span class="label">Phone</span><span class="value">+63 948 875 4971</span></a></li>
+        <li><div class="contact-row"><span class="label">Location</span><span class="value">Marihatag, Philippines</span></div></li>
+        <li><a class="contact-row" href="https://www.linkedin.com/in/ivan-daniel-orbeta/" target="_blank" rel="noopener"><span class="label">LinkedIn</span><span class="value">Ivan Daniel Orbeta</span></a></li>
+        <li><a class="contact-row" href="https://github.com/ivanorbeta18-code" target="_blank" rel="noopener"><span class="label">GitHub</span><span class="value">ivanorbeta18-code</span></a></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>&copy; 2026 Ivan Daniel O. Orbeta. All rights reserved.</span>
+      <a href="#top">Back to top</a>
+    </div>
   </footer>
 
+  <script src="js/nav.js"></script>
 </body>
 </html>

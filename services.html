@@ -3,76 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f6f7fb" />
   <title>Ivan Daniel Orbeta | Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="Css/global.css" />
   <link rel="stylesheet" href="Css/nav.css" />
   <link rel="stylesheet" href="Css/services.css" />
   <link rel="stylesheet" href="Css/footer.css" />
 </head>
-<body>
+<body id="top">
 
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">IVAN.</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html" class="active">Services</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Services Section -->
-  <section class="services-section">
-    <h2 class="section-title">My Services</h2>
-    <div class="section-line"></div>
-    <div class="cards">
-
-      <div class="card">
-        <div class="icon">🌐</div>
-        <h3>Web Design</h3>
-        <p>Clean and responsive websites built with HTML &amp; CSS tailored to your brand.</p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🎥</div>
-        <h3>Premier Pro</h3>
-        <p>Video editing for YouTube, social media, and promotional content using Adobe Premiere Pro.</p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🎨</div>
-        <h3>Canva Graphics</h3>
-        <p>Social media posts, banners, flyers, and presentation slides designed in Canva.</p>
-      </div>
-
-      <div class="card">
-        <div class="icon">📋</div>
-        <h3>Data Entry</h3>
-        <p>Accurate and organized data encoding, spreadsheet management, and file handling.</p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🤝</div>
-        <h3>Virtual Assistance</h3>
-        <p>Email management, scheduling, research, and other administrative support tasks.</p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🔧</div>
-        <h3>Website Maintenance</h3>
-        <p>Regular checks, minor fixes, and content updates to keep your site running smoothly.</p>
-      </div>
-
+  <header class="site-nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="index.html" aria-label="Ivan, home">Ivan</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><span></span></button>
+      <nav aria-label="Main">
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active" aria-current="page">Services</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li class="nav-cta"><a href="contact.html">Contact</a></li>
+      </ul>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <!-- Footer -->
-  <footer>
-    <span>&copy; 2026 Ivan Daniel O. Orbeta.</span> All Rights Reserved.
+  <main>
+    <div class="wrap">
+      <div class="page-head">
+        <h1 class="page-title">Services</h1>
+        <p class="page-lede">Six ways I can help your business or personal brand.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service">
+          <div class="icon" aria-hidden="true">🌐</div>
+          <h2>Web design</h2>
+          <p>Clean and responsive websites built with HTML &amp; CSS, tailored to your brand.</p>
+        </article>
+        <article class="service">
+          <div class="icon" aria-hidden="true">🎥</div>
+          <h2>Video editing</h2>
+          <p>Video editing for YouTube, social media, and promotional content using Adobe Premiere Pro.</p>
+        </article>
+        <article class="service">
+          <div class="icon" aria-hidden="true">🎨</div>
+          <h2>Canva graphics</h2>
+          <p>Social media posts, banners, flyers, and presentation slides designed in Canva.</p>
+        </article>
+        <article class="service">
+          <div class="icon" aria-hidden="true">📋</div>
+          <h2>Data entry</h2>
+          <p>Accurate and organized data encoding, spreadsheet management, and file handling.</p>
+        </article>
+        <article class="service">
+          <div class="icon" aria-hidden="true">🤝</div>
+          <h2>Virtual assistance</h2>
+          <p>Email management, scheduling, research, and other administrative support tasks.</p>
+        </article>
+        <article class="service">
+          <div class="icon" aria-hidden="true">🔧</div>
+          <h2>Website maintenance</h2>
+          <p>Regular checks, minor fixes, and content updates to keep your site running smoothly.</p>
+        </article>
+      </div>
+      <div class="cta-band section" style="margin-bottom:96px">
+        <h2>Not sure which service fits? Tell me what you need.</h2>
+        <a class="btn btn-primary" href="contact.html">Contact me</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>&copy; 2026 Ivan Daniel O. Orbeta. All rights reserved.</span>
+      <a href="#top">Back to top</a>
+    </div>
   </footer>
 
+  <script src="js/nav.js"></script>
 </body>
 </html>

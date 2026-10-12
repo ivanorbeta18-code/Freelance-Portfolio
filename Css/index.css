@@ -1,55 +1,65 @@
-/* ── home.css ── */
+/* ── index.css ── */
+.hero{padding-top:96px;padding-bottom:72px}
+.hero > *{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+.hero > *:nth-child(2){animation-delay:.08s}
+.hero > *:nth-child(3){animation-delay:.16s}
+.hero > *:nth-child(4){animation-delay:.26s}
+.hero > *:nth-child(5){animation-delay:.34s}
 
-.hero {
-  background: var(--blue);
-  color: var(--white);
-  text-align: center;
-  padding: 100px 20px 80px;
+.status{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:8px 16px;margin-bottom:28px;
+  background:var(--card);border:1px solid var(--line);border-radius:999px;
+  font-size:.92rem;color:var(--muted);
+}
+.status i{
+  width:8px;height:8px;border-radius:50%;background:#2fb36b;
+  animation:pulse 2s infinite;
+}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(47,179,107,.5)}
+  70%{box-shadow:0 0 0 9px rgba(47,179,107,0)}
+  100%{box-shadow:0 0 0 0 rgba(47,179,107,0)}
 }
 
-.hero h1 {
-  font-size: 3rem;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
+.hero-name{font-family:var(--font-display);font-size:1.25rem;font-weight:600;letter-spacing:-.01em}
+.hero-role{color:var(--muted);margin-bottom:20px}
+
+.hero h1{
+  font-family:var(--font-display);
+  font-size:clamp(2.4rem,7vw,5rem);
+  line-height:1.04;letter-spacing:-.04em;font-weight:700;
+  max-width:16ch;
 }
 
-.hero h1 span {
-  color: var(--yellow);
+.rotator{
+  display:block;min-height:1.1em;
+  transition:opacity .32s ease,transform .32s ease;
+}
+.rotator.out{opacity:0;transform:translateY(-14px)}
+.rotator.pre{transition:none;opacity:0;transform:translateY(14px)}
+.rotator-word{
+  background:linear-gradient(transparent 68%,var(--yellow) 68%,var(--yellow) 92%,transparent 92%);
+  -webkit-box-decoration-break:clone;box-decoration-break:clone;
+  padding:0 .08em;color:var(--blue);
 }
 
-.hero h2 {
-  font-size: 1.3rem;
-  color: var(--skyblue);
-  font-weight: normal;
-  margin-bottom: 20px;
-}
+.hero-lede{max-width:50ch;margin:28px 0 36px;color:var(--muted);font-size:1.15rem}
 
-.hero p {
-  max-width: 560px;
-  margin: 0 auto 36px;
-  line-height: 1.8;
-  color: #cde;
-  font-size: 1rem;
+/* Quick links: whole tile is clickable */
+.quick{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  border-top:1px solid var(--line);margin-bottom:96px;
 }
+.quick a{display:block;padding:32px 32px 36px 0;min-height:120px;transition:background .2s}
+.quick a + a{padding-left:32px;border-left:1px solid var(--line)}
+.quick a:hover{background:var(--card)}
+.quick h2{font-family:var(--font-display);font-size:1.4rem;letter-spacing:-.02em;margin-bottom:6px}
+.quick p{color:var(--muted);font-size:.98rem}
 
-.btn {
-  display: inline-block;
-  background: var(--yellow);
-  color: var(--black);
-  padding: 14px 36px;
-  border-radius: 4px;
-  font-size: 1rem;
-  font-weight: bold;
-  transition: background 0.2s, transform 0.2s;
-}
-
-.btn:hover {
-  background: #e0b000;
-  transform: translateY(-2px);
-}
-
-@media (max-width: 620px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
+@media (max-width:820px){
+  .hero{padding-top:56px;padding-bottom:48px}
+  .rotator{min-height:2.1em}
+  .quick{grid-template-columns:1fr;margin-bottom:64px}
+  .quick a,.quick a + a{padding:24px 0;border-left:0;border-bottom:1px solid var(--line)}
 }
